@@ -5,57 +5,128 @@
   font-family: Arial, sans-serif;
 }
 .navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    align-items: center;
-    width: 100%;
-    z-index: 1000;
-    display: flex; 
-    justify-content: space-between; 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241, 245, 245);
 }
 
 .navbar-middle {
-    display: flex;
+  display: flex;
 }
 
 .navbar-right {
-    display: flex; 
+  display: flex;
 }
 
 .navbar a {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .navbar a:hover {
-    background-color: #272323;
-    color: rgb(234, 230, 230);
+  background-color: #272323;
+  color: rgb(234, 230, 230);
 }
 
 .logo {
-    width: 120px; 
-    cursor: pointer;
+  width: 120px;
+  cursor: pointer;
 }
 
 .logo img {
-    max-width: 100%; 
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
 
 .button {
-    padding: 10px 20px;
-    background-color: #0c0c0c;
-    color: white;
-    font-size: 16px;
-    margin: 5px;
+  padding: 10px 20px;
+  background-color: #0c0c0c;
+  color: white;
+  font-size: 16px;
+  margin: 5px;
 }
 
-.button:hover{
-    background-color: aliceblue;
-    color: #0c0c0c;
+.button:hover {
+  background-color: aliceblue;
+  color: #0c0c0c;
+}
+
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.landing-inner {
+  text-align: center;
+}
+
+.landing-inner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.landing-inner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.arrow img {
+  width: 40px;
+  height: auto;
+}
+
+#Name {
+  color: blue;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 50px;
+  margin-top: 150px;
+}
+
+.about-section h1 {
+  text-align: center;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-description p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.about-photo {
+  text-align: center;
+  width: 450px;
+}
+
+.about-photo img {
+  max-height: 50%;
+  border-radius: 50px;
+}
+
+.about-description p {
+  margin: 5px;
+  text-align: justify;
+  padding: 10px;
 }
 
