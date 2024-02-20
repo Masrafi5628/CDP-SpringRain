@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Portfolio</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./modal.css" />
   </head>
   <body>
     <div class="navbar">
@@ -15,7 +16,32 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="trigger">Contact</a>
+        <!-- modal content -->
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">×</span>
+            <form action="">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" class="name" placeholder="Enter Your Name" />
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input
+                  type="text"
+                  class="email"
+                  placeholder="Enter Your E-mail"
+                />
+              </div>
+              <div>
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Enter Your Message">
+                </textarea>
+              </div>
+              <button onclick="">Send</button>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="navbar-right">
         <button href="#resume" class="button">Resume</button>
@@ -35,8 +61,8 @@
         </a>
       </div>
     </div>
+    <div class="about-h"></div>
     <div id="about">
-
       <div class="about-section">
         <h1>About Me</h1>
         <div class="about-content">
@@ -72,5 +98,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
