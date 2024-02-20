@@ -4,49 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="./modal.css" />
+
+    <style>
+      /* Add a black background color to the top navigation */
+    </style>
   </head>
   <body>
-    <div class="navbar">
-      <div class="logo">
-        <img src="logo.png" alt="Logo" />
-      </div>
-      <div class="navbar-middle">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="trigger">Contact</a>
-        <!-- modal content -->
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close-button">×</span>
-            <form action="">
-              <div class="input-group">
-                <label for="name">Name</label>
-                <input type="text" class="name" placeholder="Enter Your Name" />
-              </div>
-              <div>
-                <label for="email">E-mail</label>
-                <input
-                  type="text"
-                  class="email"
-                  placeholder="Enter Your E-mail"
-                />
-              </div>
-              <div>
-                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Enter Your Message">
-                </textarea>
-              </div>
-              <button onclick="">Send</button>
-            </form>
+    <div class="topnav" id="myTopnav">
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#about" class="active">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="trigger">Contact</a>
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close-button">×</span>
+              <form action="">
+                <div class="input-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="name"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail</label>
+                  <input
+                    type="text"
+                    class="email"
+                    placeholder="Enter Your E-mail"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="Message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter Your Message"
+                  >
+                  </textarea>
+                </div>
+                <button onclick="">Send</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="navbar-right">
-        <button href="#resume" class="button">Resume</button>
-        <button href="#hire" class="button">Hire Me</button>
-      </div>
+        <div class="navbar-right">
+          <button href="#resume" class="button">Resume</button>
+          <button href="#hire" class="button">Hire Me</button>
+        </div>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div id="landing-content" class="landing">
@@ -61,12 +83,16 @@
         </a>
       </div>
     </div>
-    <div class="about-h"></div>
-    <div id="about">
-      <div class="about-section">
-        <h1>About Me</h1>
-        <div class="about-content">
-          <div class="about-description">
+
+    <section id="about">
+      <div class="container">
+        <div class="about-header">
+          <div class="line"></div>
+          <h2>About Me</h2>
+          <div class="line"></div>
+        </div>
+        <div class="about-content-wrap">
+          <div class="about-left">
             <p>
               I'm Md. Masrafi Bin Seraj, hailing from the historic district
               Bagerhat, Bangladesh. Currently, I'm in my final year pursuing a
@@ -92,13 +118,24 @@
               exciting realm of teaching machines to emulate human cognition.
             </p>
           </div>
-          <div class="about-photo">
-            <img src="Masrafi.jpg" alt="Masrafi Photo" />
+          <div class="about-right">
+            <img src="./Masrafi.jpg" alt="" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="./script.js"></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
