@@ -14,8 +14,8 @@ html {
 .topnav {
   background-color: #33333300;
   overflow: hidden;
-  position: fixed;
-  background-color: white;
+  position: sticky;
+  background-color: #ffffff;
   width: 100%;
 }
 nav {
@@ -61,7 +61,7 @@ nav {
     align-items: flex-start;
   }
 
-  .topnav a:not(:first-child) {
+  .topnav a() {
     display: none;
   }
   .topnav a.icon {
