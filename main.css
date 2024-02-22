@@ -17,6 +17,7 @@ html {
   position: sticky;
   background-color: #ffffff;
   width: 100%;
+  top: 0;
 }
 nav {
   display: flex;
